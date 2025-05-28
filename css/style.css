@@ -598,6 +598,9 @@ a:hover {
 /* Responsive Styles */
 @media (max-width: 991px) {
   /* Basic container and section styles */
+  #theme-icon {
+    display: none;
+  }
   .container {
     width: 100%;
     padding: 0 15px;
