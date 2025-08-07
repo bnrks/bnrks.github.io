@@ -27,10 +27,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Typing Animation
   const titles = [
-    "Software Engineering Student",
-    "AI Developer Intern | TensorFlow & ReactJS Experience",
-    "Python Developer",
-    "Junior Developer Passionate About Machine Learning",
+    "AI Engineer | Computer Vision & MLOps",
+    "Full-Stack ML Developer – TensorFlow & FastAPI",
+    "Python Enthusiast Solving Real-World Problems",
+    "React / React-Native Dev Bridging UX & AI",
   ];
 
   const typingText = document.querySelector(".typing-text");
