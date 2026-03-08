@@ -27,10 +27,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Typing Animation
   const titles = [
-    "AI Engineer | Computer Vision & MLOps",
-    "Full-Stack ML Developer – TensorFlow & FastAPI",
-    "Python Enthusiast Solving Real-World Problems",
-    "React / React-Native Dev Bridging UX & AI",
+    "Computer Vision Engineer | Object Detection & Segmentation",
+    "Deep Learning Developer – YOLO, CNN & TensorFlow",
+    "Building Real-Time Visual Intelligence Systems",
+    "CV Engineer @ Ergosafe Partner",
   ];
 
   const typingText = document.querySelector(".typing-text");
@@ -320,10 +320,28 @@ function updateThemeIcon(theme) {
   }
 }
 
-// Skill Progress Bar
+// Skill Progress Bar + Confidence Count-up
 
 document.addEventListener("DOMContentLoaded", function () {
   const skillProgressBars = document.querySelectorAll(".skill-progress");
+
+  // Easing function
+  function easeOutCubic(t) {
+    return 1 - Math.pow(1 - t, 3);
+  }
+
+  // Animate confidence value count-up
+  function animateConfidence(element, start, end, duration) {
+    const startTime = performance.now();
+    function update(currentTime) {
+      const elapsed = currentTime - startTime;
+      const progress = Math.min(elapsed / duration, 1);
+      const value = start + (end - start) * easeOutCubic(progress);
+      element.textContent = value.toFixed(2);
+      if (progress < 1) requestAnimationFrame(update);
+    }
+    requestAnimationFrame(update);
+  }
 
   // Intersection Observer callback function
   const observerCallback = (entries, observer) => {
@@ -332,6 +350,16 @@ document.addEventListener("DOMContentLoaded", function () {
         const progressBar = entry.target;
         const targetWidth = progressBar.getAttribute("data-skill");
         progressBar.style.width = `${targetWidth}%`;
+
+        // Animate confidence value if present
+        const confEl = progressBar
+          .closest(".cv-confidence")
+          ?.querySelector(".cv-conf-value");
+        if (confEl) {
+          const target = parseFloat(confEl.getAttribute("data-target")) || 0;
+          animateConfidence(confEl, 0, target, 800);
+        }
+
         observer.unobserve(progressBar);
       }
     });
@@ -346,5 +374,24 @@ document.addEventListener("DOMContentLoaded", function () {
 
   skillProgressBars.forEach((progressBar) => {
     observer.observe(progressBar);
+  });
+
+  // Scan Line Animation - trigger once per section
+  const sectionObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (
+          entry.isIntersecting &&
+          !entry.target.classList.contains("cv-scanned")
+        ) {
+          entry.target.classList.add("cv-scanned");
+        }
+      });
+    },
+    { threshold: 0.15 }
+  );
+
+  document.querySelectorAll(".section").forEach((section) => {
+    sectionObserver.observe(section);
   });
 });

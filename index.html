@@ -21,26 +21,26 @@
     <!-- SEO Meta Tags -->
     <meta
       name="description"
-      content="Orhan Burak Turan is a Software Engineering student specializing in AI and Machine Learning. Explore my portfolio showcasing projects in data science, web development, and machine learning."
+      content="Orhan Burak Turan is a Computer Vision Engineer specializing in object detection, image classification, and AI-powered visual intelligence systems."
     />
     <meta
       name="keywords"
-      content="data scientist, machine learning engineer, AI, data analytics, python, deep learning, Orhan Burak Turan"
+      content="computer vision engineer, object detection, YOLO, CNN, TensorFlow, OpenCV, deep learning, AI, Python, Orhan Burak Turan"
     />
     <meta name="author" content="Orhan Burak Turan" />
 
     <!-- Open Graph / Social Media Meta Tags -->
     <meta
       property="og:title"
-      content="Orhan Burak Turan | Software Developer"
+      content="Orhan Burak Turan | Computer Vision Engineer"
     />
     <meta
       property="og:description"
-      content="Data Scientist and Machine Learning Engineer specializing in AI solutions and predictive modeling"
+      content="Computer Vision Engineer specializing in object detection, image classification, and AI-powered visual intelligence systems"
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://burakturandev.com" />
-    <meta name="theme-color" content="#1dcd9f" />
+    <meta name="theme-color" content="#00ff41" />
 
     <!-- Bootstrap CSS -->
     <link
@@ -49,7 +49,7 @@
     />
     <!-- Google Fonts -->
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&amp;family=Source+Sans+Pro:wght@300;400;600&amp;display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&amp;family=Source+Sans+Pro:wght@300;400;600&amp;family=JetBrains+Mono:wght@400;500;700&amp;display=swap"
       rel="stylesheet"
     />
     <!-- Font Awesome for icons -->
@@ -67,196 +67,10 @@
       href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dominant-baseline='middle' font-size='40' font-family='Arial' font-weight='bold' fill='%231dcd9f'%3EOBT%3C/text%3E%3C/svg%3E"
     />
 
-    <title>Orhan Burak Turan | Software Developer</title>
-    <style>
-      @keyframes slide-in-one-tap {
-        from {
-          transform: translateY(80px);
-        }
-        to {
-          transform: translateY(0px);
-        }
-      }
-
-      .trust-hide-gracefully {
-        opacity: 0;
-      }
-
-      .trust-wallet-one-tap .hidden {
-        display: none;
-      }
-
-      .trust-wallet-one-tap .semibold {
-        font-weight: 500;
-      }
-
-      .trust-wallet-one-tap .binance-plex {
-        font-family: "Binance";
-      }
-
-      .trust-wallet-one-tap .rounded-full {
-        border-radius: 50%;
-      }
-
-      .trust-wallet-one-tap .flex {
-        display: flex;
-      }
-
-      .trust-wallet-one-tap .flex-col {
-        flex-direction: column;
-      }
-
-      .trust-wallet-one-tap .items-center {
-        align-items: center;
-      }
-
-      .trust-wallet-one-tap .space-between {
-        justify-content: space-between;
-      }
-
-      .trust-wallet-one-tap .justify-center {
-        justify-content: center;
-      }
-
-      .trust-wallet-one-tap .w-full {
-        width: 100%;
-      }
-
-      .trust-wallet-one-tap .box {
-        transition: all 0.5s cubic-bezier(0, 0, 0, 1.43);
-        animation: slide-in-one-tap 0.5s cubic-bezier(0, 0, 0, 1.43);
-        width: 384px;
-        border-radius: 15px;
-        background: #fff;
-        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
-        position: fixed;
-        right: 30px;
-        bottom: 30px;
-        z-index: 1020;
-      }
-
-      .trust-wallet-one-tap .header {
-        gap: 15px;
-        border-bottom: 1px solid #e6e6e6;
-        padding: 10px 18px;
-      }
-
-      .trust-wallet-one-tap .header .left-items {
-        gap: 15px;
-      }
-
-      .trust-wallet-one-tap .header .title {
-        color: #1e2329;
-        font-size: 18px;
-        font-weight: 600;
-        line-height: 28px;
-      }
-
-      .trust-wallet-one-tap .header .subtitle {
-        color: #474d57;
-        font-size: 14px;
-        line-height: 20px;
-      }
-
-      .trust-wallet-one-tap .header .close {
-        color: #1e2329;
-        cursor: pointer;
-      }
-
-      .trust-wallet-one-tap .body {
-        padding: 9px 18px;
-        gap: 10px;
-      }
-
-      .trust-wallet-one-tap .body .right-items {
-        gap: 10px;
-        width: 100%;
-      }
-
-      .trust-wallet-one-tap .body .right-items .wallet-title {
-        color: #1e2329;
-        font-size: 16px;
-        font-weight: 600;
-        line-height: 20px;
-      }
-
-      .trust-wallet-one-tap .body .right-items .wallet-subtitle {
-        color: #474d57;
-        font-size: 14px;
-        line-height: 20px;
-      }
-
-      .trust-wallet-one-tap .connect-indicator {
-        gap: 15px;
-        padding: 8px 0;
-      }
-
-      .trust-wallet-one-tap .connect-indicator .flow-icon {
-        color: #474d57;
-      }
-
-      .trust-wallet-one-tap .loading-color {
-        color: #fff;
-      }
-
-      .trust-wallet-one-tap .button {
-        border-radius: 50px;
-        outline: 2px solid transparent;
-        outline-offset: 2px;
-        background-color: rgb(5, 0, 255);
-        border-color: rgb(229, 231, 235);
-        cursor: pointer;
-        text-align: center;
-        height: 45px;
-      }
-
-      .trust-wallet-one-tap .button .button-text {
-        color: #fff;
-        font-size: 16px;
-        font-weight: 600;
-        line-height: 20px;
-      }
-
-      .trust-wallet-one-tap .footer {
-        margin: 20px 30px;
-      }
-
-      .trust-wallet-one-tap .check-icon {
-        color: #fff;
-      }
-
-      @font-face {
-        font-family: "Binance";
-        src: url(chrome-extension://egjidjbpglichdcondbcbdnbeeppgdph/fonts/BinancePlex-Regular.otf)
-          format("opentype");
-        font-weight: 400;
-        font-style: normal;
-      }
-
-      @font-face {
-        font-family: "Binance";
-        src: url(chrome-extension://egjidjbpglichdcondbcbdnbeeppgdph/fonts/BinancePlex-Medium.otf)
-          format("opentype");
-        font-weight: 500;
-        font-style: normal;
-      }
-
-      @font-face {
-        font-family: "Binance";
-        src: url(chrome-extension://egjidjbpglichdcondbcbdnbeeppgdph/fonts/BinancePlex-SemiBold.otf)
-          format("opentype");
-        font-weight: 600;
-        font-style: normal;
-      }
-    </style>
+    <title>Orhan Burak Turan | Computer Vision Engineer</title>
   </head>
 
-  <body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
-    <div
-      id="in-page-channel-node-id"
-      data-channel-name="in_page_channel_i6pa54"
-    ></div>
-    <script src="chrome-extension://nebnhfamliijlghikdgcigoebonmoibm/addToWindow.js"></script>
+  <body>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3 scrolled">
       <div class="container">
@@ -330,6 +144,12 @@
 
     <!-- Hero Section -->
     <section id="hero" class="hero-section">
+      <!-- Viewfinder Corners -->
+      <span class="cv-viewfinder-corner cv-viewfinder-corner--tl"></span>
+      <span class="cv-viewfinder-corner cv-viewfinder-corner--tr"></span>
+      <span class="cv-viewfinder-corner cv-viewfinder-corner--bl"></span>
+      <span class="cv-viewfinder-corner cv-viewfinder-corner--br"></span>
+
       <div class="container h-100">
         <div class="row h-100 align-items-center gy-4">
           <div class="col-lg-6 aos-init aos-animate" data-aos="fade-right">
@@ -341,11 +161,21 @@
                 >
                 <span class="typing-cursor">|</span>
               </div>
+              <!-- Mobile-only profile image -->
+              <div class="hero-profile-mobile d-lg-none">
+                <div class="hero-profile-wrapper">
+                  <span class="cv-bbox-label">person 0.99</span>
+                  <img
+                    src="images/profile2.jpg"
+                    alt="Orhan Burak Turan"
+                    class="hero-profile-image"
+                  />
+                </div>
+              </div>
               <p class="mb-4">
-                I am a passionate software engineer student with a strong
-                interest in data science and machine learning. I am eager to
-                learn and grow in the field, and I am excited to take on new
-                challenges.
+                Computer Vision Engineer building intelligent visual systems
+                for real-world applications. Currently at Ergosafe Partner,
+                developing CV solutions for industrial safety.
               </p>
               <a href="#contact" class="btn btn-outline-primary btn-lg"
                 >Get in Touch</a
@@ -377,11 +207,12 @@
           </div>
 
           <!-- Add the new profile image column -->
-          <div class="col-lg-6 aos-init aos-animate" data-aos="fade-left">
+          <div class="col-lg-6 d-none d-lg-block aos-init aos-animate" data-aos="fade-left">
             <div class="hero-profile-container">
               <div class="hero-profile-wrapper">
+                <span class="cv-bbox-label">person 0.99</span>
                 <img
-                  src="/images/profile2.jpg"
+                  src="images/profile2.jpg"
                   alt="Orhan Burak Turan"
                   class="hero-profile-image"
                 />
@@ -389,6 +220,13 @@
               <div class="hero-profile-backdrop"></div>
             </div>
           </div>
+        </div>
+        <!-- HUD Metadata Bar -->
+        <div class="cv-hud" aria-hidden="true">
+          <span>FRAME: 001</span>
+          <span>RES: 1920x1080</span>
+          <span>MODEL: YOLOv8-portfolio</span>
+          <span>FPS: 60</span>
         </div>
         <div class="scroll-indicator">
           <a href="#about" class="scroll-down">
@@ -403,14 +241,20 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-6 aos-init aos-animate" data-aos="fade-right">
-            <h2 class="section-title text-left mb-5">About Me</h2>
+            <h2 class="section-title text-left mb-5">
+              <span class="cv-section-label cv-section-label--cyan">
+                <span class="cv-section-tag">about</span>
+                <span class="cv-section-conf">0.98</span>
+              </span>
+              About Me
+            </h2>
             <p class="lead">
-              AI & Machine Learning Developer with hands-on experience in
-              front-end development and intelligent systems.
+              Computer Vision Engineer & AI Developer specializing in
+              object detection, image classification, and real-time visual intelligence systems.
             </p>
             <p class="two-way-align">
-              Hello, I’m Orhan Burak Turan, a 22-year-old senior Software
-              Engineering student at Manisa Celal Bayar University. took my
+              Hello, I’m Orhan Burak Turan, a senior Software
+              Engineering student at Manisa Celal Bayar University. I took my
               first steps in coding at high school in the Database Programming
               track, where I built C# and SQL-driven applications. Those early
               projects cemented my passion for software and led me to pursue a
@@ -418,12 +262,13 @@
             </p>
 
             <p class="two-way-align">
-              During my first university years I explored several paths. I
-              initially set my sights on becoming a full-stack web developer,
-              gained hands-on experience, and reached the finals of the
-              Teknofest competition with my team. In third year, however, the
-              rapid progress in AI shifted my focus: I decided to dedicate my
-              career to AI-driven solutions.
+              During my first university years I explored several paths — from
+              full-stack web development to reaching the finals of the
+              Teknofest competition with my team. The rapid progress in AI and
+              computer vision shifted my focus: I decided to dedicate my career
+              to building intelligent visual systems. Currently, I am working at
+              <strong>Ergosafe Partner</strong>, where I develop computer vision
+              solutions for real-world safety and industrial applications.
             </p>
 
             <div class="achievements-list mt-4 mb-4">
@@ -431,26 +276,24 @@
               <ul class="list-unstyled">
                 <li class="mb-2">
                   <i class="fas fa-check-circle text-primary me-2"></i>
-                  Plantly – My most extensive solo project: a mobile app that
-                  diagnoses plant diseases and delivers care advice. I developed
-                  the app, trained the model, and deployed the service
-                  end-to-end.
+                  Plantly – A mobile app that diagnoses plant diseases using a
+                  custom-trained CNN model and delivers care advice via LLM.
+                  End-to-end development from model training to deployment.
                 </li>
 
                 <li class="mb-2">
                   <i class="fas fa-check-circle text-primary me-2"></i>
-                  MotivAI – A team project (three members) offering online
-                  personal-trainer support. Its standout feature is a real-time
-                  form-analysis AI that checks a user’s exercise technique and
-                  enhances safety.
+                  MotivAI – A personal trainer app with real-time pose estimation
+                  and form-analysis AI using computer vision to check exercise
+                  technique and enhance safety.
                 </li>
               </ul>
             </div>
 
             <p class="two-way-align">
-              My goal is to create scalable, reliable products that make life
-              easier through artificial intelligence, and I continuously
-              up-skill to make that vision a reality.
+              My goal is to build scalable computer vision pipelines and
+              AI-powered products that solve real-world problems — from
+              industrial safety to healthcare and beyond.
             </p>
             <div class="mt-4">
               <a
@@ -477,24 +320,24 @@
                   data-aos="zoom-in"
                   data-aos-delay="100"
                 >
-                  <i class="fas fa-brain"></i>
-                  <span>AI/ML</span>
+                  <i class="fas fa-eye"></i>
+                  <span>CV</span>
                 </div>
                 <div
                   class="icon-wrapper aos-init aos-animate"
                   data-aos="zoom-in"
                   data-aos-delay="200"
                 >
-                  <i class="fas fa-cloud"></i>
-                  <span>Web</span>
+                  <i class="fas fa-brain"></i>
+                  <span>AI/ML</span>
                 </div>
                 <div
                   class="icon-wrapper aos-init aos-animate"
                   data-aos="zoom-in"
                   data-aos-delay="300"
                 >
-                  <i class="fas fa-database"></i>
-                  <span>Data</span>
+                  <i class="fas fa-microchip"></i>
+                  <span>MLOps</span>
                 </div>
                 <div class="orbit-center"></div>
               </div>
@@ -507,94 +350,190 @@
     <!-- Skills Section -->
     <section id="skills" class="section bg-light">
       <div class="container">
-        <h2 class="section-title text-center mb-5">Skills &amp; Expertise</h2>
+        <h2 class="section-title text-center mb-5">
+          <span class="cv-section-label">
+            <span class="cv-section-tag">skills</span>
+            <span class="cv-section-conf">0.97</span>
+          </span>
+          Skills &amp; Expertise
+        </h2>
 
         <div class="skills-grid">
-          <!-- Card 1 : AI & Machine Learning -->
-          <div class="skill-category">
+          <!-- Card 1 : Computer Vision & Deep Learning -->
+          <div class="skill-category cv-bbox">
+            <span class="cv-corner cv-corner--tl"></span>
+            <span class="cv-corner cv-corner--tr"></span>
+            <span class="cv-corner cv-corner--bl"></span>
+            <span class="cv-corner cv-corner--br"></span>
+            <span class="cv-bbox-label">cv_dl 0.96</span>
             <div class="skill-header">
-              <i class="fas fa-brain"></i>
-              <h3>AI &amp; Machine Learning</h3>
+              <i class="fas fa-eye"></i>
+              <h3>Computer Vision &amp; Deep Learning</h3>
             </div>
             <div class="skill-items">
-              <div class="skill-item">
-                <span class="skill-name">TensorFlow&nbsp;(CNN)</span>
+              <div class="skill-item cv-confidence">
+                <div class="cv-confidence-header">
+                  <span class="skill-name">Object Detection&nbsp;(YOLO)</span>
+                  <span class="cv-conf-value" data-target="0.88">0.00</span>
+                </div>
                 <div class="skill-level">
-                  <div class="skill-progress" style="width: 85%"></div>
+                  <div class="skill-progress" data-skill="88" style="width: 0%"></div>
                 </div>
               </div>
-              <div class="skill-item">
-                <span class="skill-name">Scikit-learn</span>
+              <div class="skill-item cv-confidence">
+                <div class="cv-confidence-header">
+                  <span class="skill-name">Image Classification&nbsp;(CNN)</span>
+                  <span class="cv-conf-value" data-target="0.85">0.00</span>
+                </div>
                 <div class="skill-level">
-                  <div class="skill-progress" style="width: 75%"></div>
+                  <div class="skill-progress" data-skill="85" style="width: 0%"></div>
+                </div>
+              </div>
+              <div class="skill-item cv-confidence">
+                <div class="cv-confidence-header">
+                  <span class="skill-name">OpenCV</span>
+                  <span class="cv-conf-value" data-target="0.82">0.00</span>
+                </div>
+                <div class="skill-level">
+                  <div class="skill-progress" data-skill="82" style="width: 0%"></div>
+                </div>
+              </div>
+              <div class="skill-item cv-confidence">
+                <div class="cv-confidence-header">
+                  <span class="skill-name">TensorFlow&nbsp;/ Keras</span>
+                  <span class="cv-conf-value" data-target="0.85">0.00</span>
+                </div>
+                <div class="skill-level">
+                  <div class="skill-progress" data-skill="85" style="width: 0%"></div>
+                </div>
+              </div>
+              <div class="skill-item cv-confidence">
+                <div class="cv-confidence-header">
+                  <span class="skill-name">PyTorch</span>
+                  <span class="cv-conf-value" data-target="0.70">0.00</span>
+                </div>
+                <div class="skill-level">
+                  <div class="skill-progress" data-skill="70" style="width: 0%"></div>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- Card 2 : MLOps & Backend -->
-          <div class="skill-category">
+          <!-- Card 2 : MLOps & AI Infrastructure -->
+          <div class="skill-category cv-bbox cv-bbox--cyan">
+            <span class="cv-corner cv-corner--tl"></span>
+            <span class="cv-corner cv-corner--tr"></span>
+            <span class="cv-corner cv-corner--bl"></span>
+            <span class="cv-corner cv-corner--br"></span>
+            <span class="cv-bbox-label">mlops 0.90</span>
             <div class="skill-header">
               <i class="fas fa-server"></i>
-              <h3>MLOps &amp; Backend</h3>
+              <h3>MLOps &amp; AI Infrastructure</h3>
             </div>
             <div class="skill-items">
-              <div class="skill-item">
-                <span class="skill-name">FastAPI</span>
+              <div class="skill-item cv-confidence">
+                <div class="cv-confidence-header">
+                  <span class="skill-name">Python</span>
+                  <span class="cv-conf-value" data-target="0.92">0.00</span>
+                </div>
                 <div class="skill-level">
-                  <div class="skill-progress" style="width: 80%"></div>
+                  <div class="skill-progress" data-skill="92" style="width: 0%"></div>
                 </div>
               </div>
-              <div class="skill-item">
-                <span class="skill-name">Docker</span>
+              <div class="skill-item cv-confidence">
+                <div class="cv-confidence-header">
+                  <span class="skill-name">FastAPI</span>
+                  <span class="cv-conf-value" data-target="0.80">0.00</span>
+                </div>
                 <div class="skill-level">
-                  <div class="skill-progress" style="width: 70%"></div>
+                  <div class="skill-progress" data-skill="80" style="width: 0%"></div>
                 </div>
               </div>
-              <div class="skill-item">
-                <span class="skill-name">Git &amp; GitHub</span>
+              <div class="skill-item cv-confidence">
+                <div class="cv-confidence-header">
+                  <span class="skill-name">Docker</span>
+                  <span class="cv-conf-value" data-target="0.70">0.00</span>
+                </div>
                 <div class="skill-level">
-                  <div class="skill-progress" style="width: 80%"></div>
+                  <div class="skill-progress" data-skill="70" style="width: 0%"></div>
                 </div>
               </div>
-              <div class="skill-item">
-                <span class="skill-name">Python</span>
+              <div class="skill-item cv-confidence">
+                <div class="cv-confidence-header">
+                  <span class="skill-name">NVIDIA&nbsp;CUDA / TensorRT</span>
+                  <span class="cv-conf-value" data-target="0.65">0.00</span>
+                </div>
                 <div class="skill-level">
-                  <div class="skill-progress" style="width: 90%"></div>
+                  <div class="skill-progress" data-skill="65" style="width: 0%"></div>
                 </div>
               </div>
-              <div class="skill-item">
-                <span class="skill-name">SQL</span>
+              <div class="skill-item cv-confidence">
+                <div class="cv-confidence-header">
+                  <span class="skill-name">Git &amp; GitHub</span>
+                  <span class="cv-conf-value" data-target="0.80">0.00</span>
+                </div>
                 <div class="skill-level">
-                  <div class="skill-progress" style="width: 70%"></div>
+                  <div class="skill-progress" data-skill="80" style="width: 0%"></div>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- Card 3 : Frontend Development -->
-          <div class="skill-category">
+          <!-- Card 3 : Data Science & AI Tools -->
+          <div class="skill-category cv-bbox cv-bbox--magenta">
+            <span class="cv-corner cv-corner--tl"></span>
+            <span class="cv-corner cv-corner--tr"></span>
+            <span class="cv-corner cv-corner--bl"></span>
+            <span class="cv-corner cv-corner--br"></span>
+            <span class="cv-bbox-label">data_ai 0.88</span>
             <div class="skill-header">
-              <i class="fas fa-code"></i>
-              <h3>Frontend Development</h3>
+              <i class="fas fa-chart-bar"></i>
+              <h3>Data Science &amp; AI Tools</h3>
             </div>
             <div class="skill-items">
-              <div class="skill-item">
-                <span class="skill-name">React&nbsp;/ React Native</span>
+              <div class="skill-item cv-confidence">
+                <div class="cv-confidence-header">
+                  <span class="skill-name">NumPy&nbsp;/ Pandas</span>
+                  <span class="cv-conf-value" data-target="0.85">0.00</span>
+                </div>
                 <div class="skill-level">
-                  <div class="skill-progress" style="width: 80%"></div>
+                  <div class="skill-progress" data-skill="85" style="width: 0%"></div>
                 </div>
               </div>
-              <div class="skill-item">
-                <span class="skill-name">JavaScript&nbsp;/ TypeScript</span>
+              <div class="skill-item cv-confidence">
+                <div class="cv-confidence-header">
+                  <span class="skill-name">Scikit-learn</span>
+                  <span class="cv-conf-value" data-target="0.78">0.00</span>
+                </div>
                 <div class="skill-level">
-                  <div class="skill-progress" style="width: 75%"></div>
+                  <div class="skill-progress" data-skill="78" style="width: 0%"></div>
                 </div>
               </div>
-              <div class="skill-item">
-                <span class="skill-name">UI/UX Thinking</span>
+              <div class="skill-item cv-confidence">
+                <div class="cv-confidence-header">
+                  <span class="skill-name">LLM Integration&nbsp;(OpenAI)</span>
+                  <span class="cv-conf-value" data-target="0.75">0.00</span>
+                </div>
                 <div class="skill-level">
-                  <div class="skill-progress" style="width: 65%"></div>
+                  <div class="skill-progress" data-skill="75" style="width: 0%"></div>
+                </div>
+              </div>
+              <div class="skill-item cv-confidence">
+                <div class="cv-confidence-header">
+                  <span class="skill-name">React&nbsp;/ React Native</span>
+                  <span class="cv-conf-value" data-target="0.80">0.00</span>
+                </div>
+                <div class="skill-level">
+                  <div class="skill-progress" data-skill="80" style="width: 0%"></div>
+                </div>
+              </div>
+              <div class="skill-item cv-confidence">
+                <div class="cv-confidence-header">
+                  <span class="skill-name">SQL</span>
+                  <span class="cv-conf-value" data-target="0.70">0.00</span>
+                </div>
+                <div class="skill-level">
+                  <div class="skill-progress" data-skill="70" style="width: 0%"></div>
                 </div>
               </div>
             </div>
@@ -731,61 +670,73 @@
             Technologies I Work With
           </h3>
           <div class="tech-stack-grid">
-            <div class="tech-item">
-              <img src="/images/python.png" alt="Python" /><span>Python</span>
+            <div class="tech-item" data-conf="0.97">
+              <img src="images/python.png" alt="Python" /><span>Python</span>
             </div>
-            <div class="tech-item">
-              <img src="/images/tf.png" alt="TensorFlow" /><span
+            <div class="tech-item" data-conf="0.93">
+              <img src="images/tf.png" alt="TensorFlow" /><span
                 >TensorFlow</span
               >
             </div>
-            <div class="tech-item">
-              <img src="/images/React.webp" alt="ReactJS" /><span>React</span>
+            <div class="tech-item" data-conf="0.85">
+              <img src="images/React.webp" alt="ReactJS" /><span>React</span>
             </div>
-            <div class="tech-item">
-              <img src="/images/js.png" alt="JavaScript" /><span
+            <div class="tech-item" data-conf="0.82">
+              <img src="images/js.png" alt="JavaScript" /><span
                 >JavaScript</span
               >
             </div>
-            <div class="tech-item">
-              <img src="/images/Microsoft SQL Server.svg" alt="SQL" /><span
+            <div class="tech-item" data-conf="0.78">
+              <img src="images/Microsoft SQL Server.svg" alt="SQL" /><span
                 >SQL</span
               >
             </div>
-            <div class="tech-item">
-              <img src="/images/n8n.png" alt="n8n" /><span>n8n</span>
+            <div class="tech-item" data-conf="0.80">
+              <img src="images/n8n.png" alt="n8n" /><span>n8n</span>
             </div>
-            <div class="tech-item">
-              <img src="/images/git.png" alt="git" /><span>git</span>
+            <div class="tech-item" data-conf="0.88">
+              <img src="images/git.png" alt="git" /><span>git</span>
             </div>
-            <div class="tech-item">
-              <img src="/images/github.png" alt="Github" /><span>GitHub</span>
+            <div class="tech-item" data-conf="0.90">
+              <img src="images/github.png" alt="Github" /><span>GitHub</span>
             </div>
-            <div class="tech-item">
-              <img src="/images/NumPy.svg" alt="NumPy" /><span>NumPy</span>
+            <div class="tech-item" data-conf="0.86">
+              <img src="images/NumPy.svg" alt="NumPy" /><span>NumPy</span>
             </div>
-            <div class="tech-item">
-              <img src="/images/Pandas.svg" alt="Pandas" /><span>Pandas</span>
+            <div class="tech-item" data-conf="0.87">
+              <img src="images/Pandas.svg" alt="Pandas" /><span>Pandas</span>
             </div>
-            <div class="tech-item">
-              <img src="/images/scikit-learn.svg" alt="scikit-learn" /><span
+            <div class="tech-item" data-conf="0.84">
+              <img src="images/scikit-learn.svg" alt="scikit-learn" /><span
                 >scikit-learn</span
               >
             </div>
-            <div class="tech-item" style="width: 120px">
-              <img src="/images/Google Cloud.svg" alt=" Google Cloud" /><span
+            <div class="tech-item" data-conf="0.76" style="width: 120px">
+              <img src="images/Google Cloud.svg" alt=" Google Cloud" /><span
                 >Google Cloud</span
               >
             </div>
-            <div class="tech-item">
-              <img src="/images/Firebase.svg" alt="Firebase" /><span
+            <div class="tech-item" data-conf="0.79">
+              <img src="images/Firebase.svg" alt="Firebase" /><span
                 >Firebase</span
               >
             </div>
-            <div class="tech-item">
-              <img src="/images/fastapi-logo-.png" alt="FastAPI" /><span
+            <div class="tech-item" data-conf="0.88">
+              <img src="images/fastapi-logo-.png" alt="FastAPI" /><span
                 >FastAPI</span
               >
+            </div>
+            <div class="tech-item" data-conf="0.92">
+              <img src="images/nvidia.svg" alt="NVIDIA" /><span>NVIDIA</span>
+            </div>
+            <div class="tech-item" data-conf="0.89">
+              <img src="images/openai.svg" alt="OpenAI" /><span>OpenAI</span>
+            </div>
+            <div class="tech-item" data-conf="0.91">
+              <img src="images/opencv.svg" alt="OpenCV" /><span>OpenCV</span>
+            </div>
+            <div class="tech-item" data-conf="0.90">
+              <img src="images/ultralytics.svg" alt="Ultralytics" /><span>Ultralytics</span>
             </div>
           </div>
         </div>
@@ -795,7 +746,13 @@
     <!-- Projects Section -->
     <section id="projects" class="section">
       <div class="container">
-        <h2 class="section-title text-center mb-2">Featured Projects</h2>
+        <h2 class="section-title text-center mb-2">
+          <span class="cv-section-label cv-section-label--magenta">
+            <span class="cv-section-tag">projects</span>
+            <span class="cv-section-conf">0.95</span>
+          </span>
+          Featured Projects
+        </h2>
         <p class="text-center lead mb-5">
           Explore my recent work and technical achievements
         </p>
@@ -821,7 +778,12 @@
               data-aos="fade-up"
               data-category="ml"
             >
-              <div class="project-card">
+              <div class="project-card cv-bbox">
+                <span class="cv-corner cv-corner--tl"></span>
+                <span class="cv-corner cv-corner--tr"></span>
+                <span class="cv-corner cv-corner--bl"></span>
+                <span class="cv-corner cv-corner--br"></span>
+                <span class="cv-bbox-label">ml_app 0.97</span>
                 <div class="project-header">
                   <div class="project-icon">
                     <i class="fas fa-mobile"></i>
@@ -873,7 +835,12 @@
               data-aos="fade-up"
               data-category="ml"
             >
-              <div class="project-card">
+              <div class="project-card cv-bbox">
+                <span class="cv-corner cv-corner--tl"></span>
+                <span class="cv-corner cv-corner--tr"></span>
+                <span class="cv-corner cv-corner--bl"></span>
+                <span class="cv-corner cv-corner--br"></span>
+                <span class="cv-bbox-label">ml_app 0.95</span>
                 <div class="project-header">
                   <div class="project-icon">
                     <i class="fas fa-mobile"></i>
@@ -924,7 +891,12 @@
               data-aos="fade-up"
               data-category="ml"
             >
-              <div class="project-card">
+              <div class="project-card cv-bbox cv-bbox--cyan">
+                <span class="cv-corner cv-corner--tl"></span>
+                <span class="cv-corner cv-corner--tr"></span>
+                <span class="cv-corner cv-corner--bl"></span>
+                <span class="cv-corner cv-corner--br"></span>
+                <span class="cv-bbox-label">automation 0.92</span>
                 <div class="project-header">
                   <div class="project-icon">
                     <i class="fas fa-robot"></i>
@@ -971,7 +943,12 @@
               data-aos="fade-up"
               data-category="web"
             >
-              <div class="project-card">
+              <div class="project-card cv-bbox cv-bbox--magenta">
+                <span class="cv-corner cv-corner--tl"></span>
+                <span class="cv-corner cv-corner--tr"></span>
+                <span class="cv-corner cv-corner--bl"></span>
+                <span class="cv-corner cv-corner--br"></span>
+                <span class="cv-bbox-label">web_app 0.91</span>
                 <div class="project-header">
                   <div class="project-icon">
                     <i class="fas fa-laptop-code"></i>
@@ -1019,7 +996,12 @@
               data-aos="fade-up"
               data-category="ml"
             >
-              <div class="project-card">
+              <div class="project-card cv-bbox">
+                <span class="cv-corner cv-corner--tl"></span>
+                <span class="cv-corner cv-corner--tr"></span>
+                <span class="cv-corner cv-corner--bl"></span>
+                <span class="cv-corner cv-corner--br"></span>
+                <span class="cv-bbox-label">ml_agent 0.93</span>
                 <div class="project-header">
                   <div class="project-icon">
                     <i class="fas fa-robot"></i>
@@ -1090,7 +1072,13 @@
     <!-- Services Section -->
     <section id="services" class="section bg-light">
       <div class="container">
-        <h2 class="section-title text-center mb-2">Freelance Services</h2>
+        <h2 class="section-title text-center mb-2">
+          <span class="cv-section-label cv-section-label--amber">
+            <span class="cv-section-tag">services</span>
+            <span class="cv-section-conf">0.94</span>
+          </span>
+          Freelance Services
+        </h2>
         <p class="text-center lead mb-5">
           Professional AI & Development services available on Bionluk
         </p>
@@ -1099,7 +1087,12 @@
           <div class="col-lg-10">
             <div class="services-grid">
               <!-- Service 1: AI & Machine Learning -->
-              <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+              <div class="service-card cv-bbox" data-aos="fade-up" data-aos-delay="100">
+                <span class="cv-corner cv-corner--tl"></span>
+                <span class="cv-corner cv-corner--tr"></span>
+                <span class="cv-corner cv-corner--bl"></span>
+                <span class="cv-corner cv-corner--br"></span>
+                <span class="cv-bbox-label">ai_service 0.96</span>
                 <div class="service-icon">
                   <i class="fas fa-brain"></i>
                 </div>
@@ -1124,7 +1117,12 @@
               </div>
 
               <!-- Service 2: Web Development -->
-              <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+              <div class="service-card cv-bbox cv-bbox--cyan" data-aos="fade-up" data-aos-delay="200">
+                <span class="cv-corner cv-corner--tl"></span>
+                <span class="cv-corner cv-corner--tr"></span>
+                <span class="cv-corner cv-corner--bl"></span>
+                <span class="cv-corner cv-corner--br"></span>
+                <span class="cv-bbox-label">web_service 0.93</span>
                 <div class="service-icon">
                   <i class="fas fa-code"></i>
                 </div>
@@ -1148,7 +1146,12 @@
               </div>
 
               <!-- Service 3: n8n Automation -->
-              <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+              <div class="service-card cv-bbox cv-bbox--amber" data-aos="fade-up" data-aos-delay="300">
+                <span class="cv-corner cv-corner--tl"></span>
+                <span class="cv-corner cv-corner--tr"></span>
+                <span class="cv-corner cv-corner--bl"></span>
+                <span class="cv-corner cv-corner--br"></span>
+                <span class="cv-bbox-label">automation 0.91</span>
                 <div class="service-icon">
                   <i class="fas fa-cogs"></i>
                 </div>
@@ -1203,7 +1206,13 @@
     <!-- Contact Section -->
     <section id="contact" class="section bg-light">
       <div class="container">
-        <h2 class="section-title text-center mb-5">Get in Touch</h2>
+        <h2 class="section-title text-center mb-5">
+          <span class="cv-section-label cv-section-label--cyan">
+            <span class="cv-section-tag">contact</span>
+            <span class="cv-section-conf">0.96</span>
+          </span>
+          Get in Touch
+        </h2>
         <div class="row justify-content-center">
           <div class="col-lg-6 text-center">
             <p class="lead mb-4">Interested in collaboration? Let's connect!</p>
@@ -1247,7 +1256,8 @@
     <!-- Footer -->
     <footer class="footer">
       <div class="container text-center py-4">
-        <p>© 2025 Orhan Burak Turan. All rights reserved.</p>
+        <p>&copy; 2025 Orhan Burak Turan. All rights reserved.</p>
+        <p class="cv-footer-readout" aria-hidden="true">model: portfolio-v2.0 | inference_time: 0.42s | confidence: 0.99</p>
       </div>
     </footer>
 
@@ -1256,7 +1266,5 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/main.js"></script>
-
-    <deepl-input-controller translate="no"></deepl-input-controller>
   </body>
 </html>
